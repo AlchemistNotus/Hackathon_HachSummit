@@ -29,6 +29,7 @@ public class RocketTurrel : EnemyBase
 
     public GameObject RocketTargetPrefab;
     public GameObject BulletPrefab;
+    public GameObject SfxBulletHit;
     public Transform BulletSpawnPoint;
 
     public Transform RotatableTower;
@@ -162,6 +163,7 @@ public class RocketTurrel : EnemyBase
     {
         SoundManager.Play3DSound("rocket_explosion", bullet.transform.position, 4);
         DamageCharactersInRadius(bullet.transform.position, RocketSplashRadius, Damage, true);
+        SfxFactory.CreateSfx(SfxBulletHit, bullet.transform.position, 2);
         if (_currentMark != null)
             Destroy(_currentMark);
         Destroy(bullet);

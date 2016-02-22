@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -25,27 +26,29 @@ public class LevelManager : MonoBehaviour
 
     #endregion
 
-    private int _currentGamePlayLevel = 1;
+    public int CurrentGamePlayLevel = 1;
 
-    private int _currentMaxLevels = 10;
+    public const int CurrentMaxLevels = 12;
 
     public void LoadFirstLevel()
     {
         SceneManager.LoadScene("Level1");
+        CurrentGamePlayLevel = 1;
+        SessionStats.Instance.Start1Level = DateTime.UtcNow;
     }
 
     public bool IsNextLevelAvailable()
     {
-        string nextLevelName = string.Format("Level{0}", _currentGamePlayLevel + 1);
+        string nextLevelName = string.Format("Level{0}", CurrentGamePlayLevel + 1);
         
         Scene nextScene = SceneManager.GetSceneByName(nextLevelName);
-        return (_currentGamePlayLevel+1) <= _currentMaxLevels;
+        return (CurrentGamePlayLevel+1) <= CurrentMaxLevels;
     }
 
     public void LoadNextLevel()
     {
-        string nextLevelName = string.Format("Level{0}", _currentGamePlayLevel+1);
-        _currentGamePlayLevel++;
+        string nextLevelName = string.Format("Level{0}", CurrentGamePlayLevel+1);
+        CurrentGamePlayLevel++;
         SceneManager.LoadScene(nextLevelName);
     }
 
@@ -56,6 +59,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadCredits()
     {
+        SessionStats.Instance.End12Level = DateTime.UtcNow;
         SceneManager.LoadScene("Credits");
     }
 

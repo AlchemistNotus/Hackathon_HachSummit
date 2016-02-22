@@ -30,11 +30,12 @@ public class GameController : MonoBehaviour
     public void Start()
     {
         SoundManager.PlayMusic("music_gameplay");
+        State = GameStates.Play;
     }
 
     void Update()
     {
-        if (!_gameEnded)
+        if (State == GameStates.Play)
         {
             CheckLoose();
         }
@@ -42,7 +43,7 @@ public class GameController : MonoBehaviour
 
     public bool IsGameFinished()
     {
-        return _gameEnded;
+        return State == GameStates.GameOver;
     }
 
     void CheckLoose()
@@ -50,7 +51,7 @@ public class GameController : MonoBehaviour
         var chars = GetAllControledCharacters();
         if (chars.Count == 0)
         {
-            _gameEnded = true;
+            State = GameStates.GameOver;
             SoundManager.StopMusic();
             SoundManager.PlaySound("gameOver_loose");
             InGameMenu.Instance.ShowLooseMenu();
@@ -59,13 +60,21 @@ public class GameController : MonoBehaviour
 
     public void Victory()
     {
-        if (_gameEnded)
+        if (State != GameStates.Play)
             return;
 
-        _gameEnded = true;
+        State = GameStates.GameOver;
         SoundManager.StopMusic();
         SoundManager.PlaySound("gameOver_win");
         InGameMenu.Instance.ShowVictoryMenu();
+
+
+        var chars = GetAllControledCharacters();
+        SessionStats.Instance.SavedBugs.Clear();
+        foreach (var characterBase in chars)
+        {
+            SessionStats.Instance.SavedBugs.Add(characterBase.GetType());
+        }
     }
 
     public void ClickedOnGround(Vector3 clickPosition)

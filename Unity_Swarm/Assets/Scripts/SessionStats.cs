@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SessionStats : MonoBehaviour
 {
@@ -26,4 +28,8 @@ public class SessionStats : MonoBehaviour
 
     public int BugsKilled;
     public int CurrentDifficulty;
+    public DateTime Start1Level;
+    public DateTime End12Level;
+
+    public List<Type> SavedBugs = new List<Type>();
 }

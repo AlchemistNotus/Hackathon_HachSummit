@@ -8,7 +8,7 @@ public class TargetPoint : MonoBehaviour
 
     public void Awake()
     {
-        _radiusSQR = Radius;
+        _radiusSQR = Radius * Radius;
     }
 
     void Update()

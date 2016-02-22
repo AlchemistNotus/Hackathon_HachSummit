@@ -10,6 +10,11 @@ public class LoadLevel : MonoBehaviour
         SceneManager.LoadScene(levelName);
     }
 
+    public void LoadMainMenu()
+    {
+        LevelManager.Instance.LoadMainMenu();
+    }
+
     public void StartGame()
     {
         LevelManager.Instance.LoadFirstLevel();
