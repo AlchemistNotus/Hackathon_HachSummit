@@ -85,9 +85,5 @@ public class InGameMenu : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.A))
-            GameController.Instance.Victory();
-    }
+    
 }
