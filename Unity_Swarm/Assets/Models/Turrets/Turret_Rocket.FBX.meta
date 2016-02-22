@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: eb10fe5eea7c03f44b3702b7b4c256b8
+timeCreated: 1455974161
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Laser_Turret_Base001
+    100006: Laser_Turret_Leg001
+    100008: Laser_Turret_Leg002
+    100010: Laser_Turret_Leg003
+    100012: Laser_Turret_Leg004
+    100014: Laser_Turret_Tower007
+    100016: Laser_Turret_Tower008
+    100018: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: Laser_Turret_Base001
+    400006: Laser_Turret_Leg001
+    400008: Laser_Turret_Leg002
+    400010: Laser_Turret_Leg003
+    400012: Laser_Turret_Leg004
+    400014: Laser_Turret_Tower007
+    400016: Laser_Turret_Tower008
+    400018: //RootNode
+    2300000: Box001
+    2300002: Box002
+    2300004: Laser_Turret_Base001
+    2300006: Laser_Turret_Leg001
+    2300008: Laser_Turret_Leg002
+    2300010: Laser_Turret_Leg003
+    2300012: Laser_Turret_Leg004
+    2300014: Laser_Turret_Tower007
+    2300016: Laser_Turret_Tower008
+    3300000: Box001
+    3300002: Box002
+    3300004: Laser_Turret_Base001
+    3300006: Laser_Turret_Leg001
+    3300008: Laser_Turret_Leg002
+    3300010: Laser_Turret_Leg003
+    3300012: Laser_Turret_Leg004
+    3300014: Laser_Turret_Tower007
+    3300016: Laser_Turret_Tower008
+    4300000: Laser_Turret_Base001
+    4300002: Laser_Turret_Leg001
+    4300004: Laser_Turret_Leg002
+    4300006: Laser_Turret_Leg003
+    4300008: Laser_Turret_Leg004
+    4300010: Laser_Turret_Tower007
+    4300012: Laser_Turret_Tower008
+    4300014: Box002
+    4300016: Box001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

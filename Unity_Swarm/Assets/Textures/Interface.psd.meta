@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 7fd6ccfafb2c9ea4aacc9d808dfc238e
+timeCreated: 1456092920
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Start_button
+    21300002: Health_red
+    21300004: Health_purple
+    21300006: Health_back
+    21300008: Bug_small
+    21300010: Bug_big
+    21300012: Restart
+    21300014: Proceed
+    21300016: Exit
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Start_button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 48}
+        - {x: -92, y: 46}
+        - {x: -89, y: 42}
+        - {x: -128, y: 19}
+        - {x: -128, y: -48}
+        - {x: 128, y: -48}
+        - {x: 128, y: 30}
+        - {x: 87, y: 48}
+    - name: Health_red
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 247
+        width: 125
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Health_purple
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 239
+        width: 125
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Health_back
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 229
+        width: 131
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Bug_small
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 16}
+        - {x: -16, y: 3}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 12}
+        - {x: 11, y: 16}
+    - name: Bug_big
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -16, y: 5}
+        - {x: -16, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: Restart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 256
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 20}
+        - {x: -128, y: -18}
+        - {x: -122, y: -20}
+        - {x: 123, y: -20}
+        - {x: 128, y: -17}
+        - {x: 128, y: 20}
+    - name: Proceed
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 133
+        width: 256
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 18.5}
+        - {x: -128, y: -16.5}
+        - {x: -125, y: -18.5}
+        - {x: 125, y: -18.5}
+        - {x: 128, y: -17.5}
+        - {x: 128, y: 18.5}
+    - name: Exit
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 256
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 18.5}
+        - {x: -128, y: -16.5}
+        - {x: -125, y: -18.5}
+        - {x: 125, y: -18.5}
+        - {x: 128, y: -17.5}
+        - {x: 128, y: 18.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
